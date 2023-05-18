@@ -9,9 +9,9 @@ async fn main() {
         w: 75.0,
         h: 60.0,
     };
-    let mut btn = Button::new(btn_rect, String::from("Hello"), 25.0, BLACK, WHITE);
+    let mut btn = Button::new(btn_rect, String::from("Hello"), 25.0, WHITE, BLACK);
     loop {
-        clear_background(WHITE);
+        clear_background(BLACK);
 
         btn.draw();
 

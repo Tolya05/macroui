@@ -41,7 +41,7 @@ impl Button {
                 self.rect_color.b -= 0.02;
             }
         }
-        else if self.rect.overlaps(&mouse_rect) && (self.rect_color.r <= self.color_copy.r - 0.04) {
+        else if self.rect.overlaps(&mouse_rect) && (self.rect_color.r <= self.color_copy.r - 0.06) {
 
         }
         else {
