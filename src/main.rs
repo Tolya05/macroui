@@ -1,23 +1,24 @@
 use macroquad::prelude::*;
-use macroui::button::Button;
+use macroui::slider::Slider;
 
 #[macroquad::main("Test UI")]
 async fn main() {
-    let btn_rect = Rect {
-        x: 100.0,
+    let slider_rect = Rect {
+        x: 250.0,
         y: 200.0,
         w: 75.0,
         h: 60.0,
     };
-    let mut btn = Button::new(btn_rect, String::from("Hello"), 25.0, WHITE, BLACK);
+    let mut slider = Slider::new(
+        slider_rect,
+        25.0,
+        true,
+        WHITE
+    );
     loop {
         clear_background(BLACK);
 
-        btn.draw();
-
-        if btn.clicked() {
-            println!("Button Clicked!");
-        }
+        slider.draw();
 
         next_frame().await
     }
