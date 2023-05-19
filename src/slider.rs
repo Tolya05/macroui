@@ -53,7 +53,7 @@ impl Slider {
             else if mouse_overlap_pos < value_pos {
                 self.value -= 1.0;
             }
-            println!("Mouse Pos {} value pos {}", mouse_overlap_pos, value_pos);
+            //println!("Mouse Pos {} value pos {}", mouse_overlap_pos, value_pos);
         }
         if self.value > 100.0 {
             self.value = 100.0;
